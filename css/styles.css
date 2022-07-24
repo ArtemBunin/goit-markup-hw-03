@@ -1,0 +1,183 @@
+/* основной цвет фона: #E5E5E5 */
+/* дополнителный цвет фона :rgba(47, 48, 58, 1) */
+/* вспомогательный цвет фона:#F5F4FA */
+/* цвет акцента : rgba(33, 150, 243, 1)*/
+/* белый цвет:rgba(255, 255, 255, 1) */
+/* основной цвет текста:#757575 */
+/* дополнительный цвет текста:#212121 */
+
+:root{
+	--primary-text-color:#757575 ;
+	--title-text-color:#212121;
+	--accent-color:#2196F3;
+	--white-cloror:#FFFFFF;
+	--footer-color:rgba(255, 255, 255, 0.6);
+	--background-collor-footer:#2F303A;
+	--background-collor-button:rgba(245, 244, 250, 1);
+}
+body {
+	background-color:var(--white-cloror);
+	font-family: Roboto,sans-serif;
+	color:var(--primary-text-color);
+	letter-spacing:0.03em;
+	font-size: 14px;
+		line-height: 1.71;
+}
+.list{list-style: none;
+}
+/* оформление шапки страницы */
+.page-header {
+	background-color: var(--white-cloror);
+}
+.logo{
+	color: var(--title-text-color);
+	font-family: Raleway,sans-serif;
+	font-weight:700;
+	 font-size: 26px;
+	  line-height:1.19;
+	letter-spacing: 0.03em;
+}
+.logo span{
+	color:var(--accent-color);}
+/*оформление навигации сайта */
+a {text-decoration: none;}
+.site-nav .link{
+	color:var(--title-text-color);
+		font-weight: 500;
+	font-size: 14px;
+	line-height:1.14;
+	letter-spacing: 0.02em;
+	  }
+.site-nav .link:hover,.site-nav .link:focus{
+	color:var(--accent-color);
+}
+.site-nav .link.current{color: var(--accent-color);}
+
+/* оформление контактов в шапке */
+.contacts .link{
+	color: var(--primary-text-color);
+	font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+	
+}
+.contacts .link:hover,.contacts .link:focus{
+	color:var(--accent-color);
+}
+/* оформление заказа */
+.order{
+	background-color:var(--background-collor-footer);
+	
+		}
+.order-title{ color: var(--white-cloror);
+font-weight:900;
+ font-size:44px;
+ line-height: 1.36;
+ text-align: center;
+ text-transform: uppercase;
+letter-spacing: 0.06em;
+ }
+.button-order{background-color: var(--accent-color);
+	color: var(--white-cloror);
+	font-family: inherit;
+	font-size: 16px;
+	font-weight:700;
+	line-height:1.87;
+	text-align: center;
+	display: inline-block;
+	letter-spacing: 0.06em;
+	border-color: var(--accent-color);
+	cursor: pointer;
+}
+/* оформление что мы умееем */
+
+
+.title{color:var(--title-text-color);
+font-weight: 500;
+	font-size: 14px;
+	line-height: 1.17;
+text-transform: uppercase;}
+/* чем мы занимаемся  */
+.work-title{color: var(--title-text-color);
+	font-weight:700;
+		font-size: 36px;
+		line-height: 1.17;
+		text-align: center;
+}
+/* оформление наша команда */
+.team{background-color: #F5F4FA;}
+.team-title{color: var(--title-text-color);
+font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center}
+.worker{color: var(--title-text-color);
+font-weight:500;
+	font-size: 16px;
+	line-height: 1.19;
+}
+.text{
+	font-size: 16px;
+	line-height: 1.19;
+	}
+
+/*оформление подвала */
+footer{background-color:#2F303A ;}
+.logo-footer{
+	color: var(--white-cloror);
+		font-family: Raleway, sans-serif;
+		font-weight:700;
+		font-size: 26px;
+		line-height: 1.19;
+		text-decoration: none;
+}
+ .logo-footer .footer-logo{
+	color: var(--accent-color);
+}
+.address{
+	font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		}
+.address a{color:var(--white-cloror) ;}
+.address-mail a{	
+	color: var(--footer-color);
+}
+.address-mail a:hover,.address-mail a:focus{color: var(--accent-color);}
+.address-phone a {
+	color: var(--footer-color)
+}
+.address-phone a:hover,.address-phone a:focus{color: var(--accent-color);}
+/* разметка страницы портфолио  раздела main*/
+
+.action{
+		
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+	background-color:var(--background-collor-button);
+	cursor: pointer;
+}
+.action:hover,.action:focus{
+	color: var(--white-cloror);
+	background-color: var(--accent-color);
+}
+.name-project{
+			font-weight: 700;
+		font-size: 18px;
+		line-height: 2.0;
+		letter-spacing: 0.06em;
+		color: var(--title-text-color);
+}
+.project-type{
+		font-size: 16px;
+		line-height: 1.87;
+		letter-spacing: 0.03em;
+			color: var(--primary-text-color);
+}
