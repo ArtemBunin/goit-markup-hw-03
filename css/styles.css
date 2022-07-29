@@ -15,6 +15,7 @@
 	--background-collor-footer:#2F303A;
 	--background-collor-button:rgba(245, 244, 250, 1);
 }
+
 body {
 	background-color:var(--white-cloror);
 	font-family: Roboto,sans-serif;
@@ -22,6 +23,14 @@ body {
 	letter-spacing:0.03em;
 	font-size: 14px;
 		line-height: 1.71;
+		
+}
+.container{
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	outline: 2px solid tomato;
 }
 .list{list-style: none;
 }
