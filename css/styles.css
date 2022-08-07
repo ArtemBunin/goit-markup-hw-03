@@ -109,27 +109,23 @@ margin-left: 93px;}
 }
 /* оформление заказа */
 .order{
-	width:1600px;
-	 height: 600px;
 background-color: var(--background-collor-footer);
 }
-.order-section{
-	text-align: center;
-		}
-		.section.order-section{padding-top: 0;}
 .order-title{
+	display: block;
  color: var(--white-cloror);
 font-weight:900;
  font-size:44px;
  line-height: 1.36;
  text-transform: uppercase;
 letter-spacing: 0.06em;
-margin-bottom: 30px;
-margin-top: 0;
-/* padding-left: auto;
-padding-right: auto;
-padding-top: 200px; */
-padding: 200px 452px 0px;
+max-width: 696px;
+text-align: center;
+margin-left: auto;
+	margin-right: auto;
+	padding-top: 106px;
+
+
  }
 
 .button-order{background-color: var(--accent-color);
@@ -138,19 +134,26 @@ padding: 200px 452px 0px;
 	font-size: 16px;
 	font-weight:700;
 	line-height:1.87;
-		display: inline-block;
+		display:block;
 	letter-spacing: 0.06em;
 	border-color: var(--accent-color);
 	border-radius: 4px;
 	cursor: pointer;
-	margin-bottom: 200px;
+	margin-top: 30px;
+		margin-bottom: 106px;
+	margin-left: auto;
+	margin-right: auto;
 	}
 	
 /* оформление что мы умееем */
 .section.skills{padding-bottom: 0;}
 .skills-title{display: none;}
 .skills{display: flex;
-justify-content: space-between;}
+}
+
+.skills li:not(:last-child) {
+	margin-right: 30px;
+}
 
 .title{color:var(--title-text-color);
 font-weight: 500;
@@ -310,7 +313,7 @@ font-weight:500;
 		letter-spacing: 0.06em;
 		color: var(--title-text-color);
 		padding-top: 20px;
-		margin-left: 24px;
+		padding-left: 24px;
 }
 .project-type{
 		font-size: 16px;
@@ -318,8 +321,8 @@ font-weight:500;
 		letter-spacing: 0.03em;
 			color: var(--primary-text-color);
 			margin-top: 4px;
-			margin-left: 24px;
-			margin-bottom: 20px;
+			padding-left: 24px;
+			padding-bottom: 20px;
 }
  .project-li img {
  	display: block;
