@@ -15,7 +15,14 @@
 	--background-collor-footer:#2F303A;
 	--background-collor-button:rgba(245, 244, 250, 1);
 }
-
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
 body {
 	background-color:var(--white-cloror);
 	font-family: Roboto,sans-serif;
@@ -30,10 +37,10 @@ h1,h2,h3,p{
 }					
 .container{
 	width: 1200px;
-	/* padding-left: 15px;
-	padding-right: 15px; */
+	padding-left: 15px;
+	padding-right: 15px;
 	margin: 0 auto;
-	outline: 2px solid tomato;
+	/* outline: 2px solid tomato; */
 }
 .section{
 	padding: 94px 0;
@@ -101,9 +108,10 @@ margin-left: 93px;}
 	color:var(--accent-color);
 }
 /* оформление заказа */
-.order{width:1600px; height: 600px;
+.order{
+	width:1600px;
+	 height: 600px;
 background-color: var(--background-collor-footer);
-/* margin-bottom: 94px; */
 }
 .order-section{
 	text-align: center;
@@ -135,9 +143,7 @@ padding: 200px 452px 0px;
 	border-color: var(--accent-color);
 	border-radius: 4px;
 	cursor: pointer;
-margin-left: auto;
-margin-right:auto;
-margin-bottom: 200px;
+	margin-bottom: 200px;
 	}
 	
 /* оформление что мы умееем */
@@ -188,6 +194,7 @@ font-weight:500;
 	text-align: center;
 	padding-top: 30px;
 	
+	
 }
 .text{
 	font-size: 16px;
@@ -204,7 +211,7 @@ font-weight:500;
 
 /*оформление подвала */
 .footer{background-color:#2F303A ;	
-	width: 1600px;
+	/* width:1600px; */
 	height: 252px;
 	}
 
@@ -245,21 +252,56 @@ font-weight:500;
 
 
 /* разметка страницы портфолио  раздела main*/
-
+.operation{
+	display: flex;
+	justify-content: center;
+	
+	
+}
 .action{
-		
-	font-weight: 500;
+		font-weight:500;
 	font-size: 16px;
 	line-height: 1.6;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--title-text-color);
 	background-color:var(--background-collor-button);
+	border-radius: 4px;
 	cursor: pointer;
+	border-color:var(--background-collor-button) ;
+	margin-bottom: 50px;
 }
 .action:hover,.action:focus{
 	color: var(--white-cloror);
 	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+.operation li:not(:last-child){margin-right: 8px;}
+.project {display:flex;
+	flex-wrap: wrap;
+	/* background-color: teal; */
+}
+ .project-li{
+	
+	margin-right: 30px;
+	margin-bottom: 30px;
+	
+}
+.project-li:nth-child(3n) {margin-right: 0;
+}
+.project-li:nth-last-child(-n+3){
+	margin-bottom: 0;
+}
+
+.project-portfolio{
+	background-color:var(--white-cloror);
+	border-style: solid;
+	border-color: #EEEEEE;
+	border-top-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-width:1px;
+	
 }
 .name-project{
 			font-weight: 700;
@@ -267,10 +309,18 @@ font-weight:500;
 		line-height: 2.0;
 		letter-spacing: 0.06em;
 		color: var(--title-text-color);
+		padding-top: 20px;
+		margin-left: 24px;
 }
 .project-type{
 		font-size: 16px;
 		line-height: 1.87;
 		letter-spacing: 0.03em;
 			color: var(--primary-text-color);
+			margin-top: 4px;
+			margin-left: 24px;
+			margin-bottom: 20px;
 }
+ .project-li img {
+ 	display: block;
+ }
