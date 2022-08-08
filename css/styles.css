@@ -111,9 +111,10 @@ margin-left: 93px;}
 .order{
 background-color: var(--background-collor-footer);
 }
+.section.container{padding: 200px auto;
+text-align: center;}
 .order-title{
-	display: block;
- color: var(--white-cloror);
+	 color: var(--white-cloror);
 font-weight:900;
  font-size:44px;
  line-height: 1.36;
@@ -121,12 +122,8 @@ font-weight:900;
 letter-spacing: 0.06em;
 max-width: 696px;
 text-align: center;
-margin-left: auto;
-	margin-right: auto;
-	padding-top: 106px;
-
-
- }
+margin: 0 auto;
+	 }
 
 .button-order{background-color: var(--accent-color);
 	color: var(--white-cloror);
@@ -134,16 +131,13 @@ margin-left: auto;
 	font-size: 16px;
 	font-weight:700;
 	line-height:1.87;
-		display:block;
+	display:inline-block;
 	letter-spacing: 0.06em;
 	border-color: var(--accent-color);
 	border-radius: 4px;
 	cursor: pointer;
-	margin-top: 30px;
-		margin-bottom: 106px;
-	margin-left: auto;
-	margin-right: auto;
-	}
+		margin-top: 30px;
+		}
 	
 /* оформление что мы умееем */
 .section.skills{padding-bottom: 0;}
