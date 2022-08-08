@@ -34,7 +34,10 @@ body {
 h1,h2,h3,p{
 	margin:0;
 	padding: 0;
-}					
+}	
+img {
+	display: block;
+}
 .container{
 	width: 1200px;
 	padding-left: 15px;
@@ -65,6 +68,8 @@ align-items: center;
 	 font-size: 26px;
 	  line-height:1.19;
 	letter-spacing: 0.03em;
+	padding-top: 23px; ;
+	padding-bottom: 22px; ;
 	
 }
 .logo span{
@@ -93,7 +98,9 @@ margin-left: 93px;}
 .site-nav .link.current{color: var(--accent-color);}
 
 /* оформление контактов в шапке */
-.contacts{margin-left:auto;}
+.contacts{margin-left:auto;
+padding-top: 30px;
+padding-bottom: 30px;}
 .contacts.list{display: flex;}
 .contacts .item + .item{margin-left: 50px;}
 .contacts .link{
@@ -170,12 +177,12 @@ text-transform: uppercase;}
 		margin-bottom: 50px;
 	}
 	.work-image{display: flex;
-	justify-content: space-between;}
+	gap: 30px;}
 /* оформление наша команда */
 .team{background-color: #F5F4FA;}
 .team-worker{
 	display: flex;
-	justify-content: space-between;
+	gap: 30px;
 }
 .team-title{color: var(--title-text-color);
 font-weight: 700;
@@ -184,32 +191,35 @@ font-weight: 700;
 	text-align: center;
 	margin-bottom: 50px;
 }
+.work-text{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 .worker{color: var(--title-text-color);
 font-weight:500;
 	font-size: 16px;
 	line-height: 1.19;
-	text-align: center;
-	padding-top: 30px;
-	
+		
 	
 }
 .text{
 	font-size: 16px;
 	line-height: 1.19;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 30px;
+		margin-top: 10px;
+	
 	}
 	.team-field{
 		background-color:var(--white-cloror) ;
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 		border-radius: 0px 0px 4px 4px;
-	}
+			}
 
 /*оформление подвала */
 .footer{background-color:#2F303A ;	
-	/* width:1600px; */
-	height: 252px;
+		height: 252px;
+		padding-top: 60px;
+		padding-bottom: 60px; ;
 	}
 
 .logo-footer{
@@ -220,8 +230,7 @@ font-weight:500;
 		font-size: 26px;
 		line-height: 1.19;
 		text-decoration: none;
-		padding-top: 60px;
-		padding-bottom: 20px;
+		margin-bottom: 20px;
 	}
  .logo-footer .footer-logo{
 	color: var(--accent-color);
@@ -244,7 +253,7 @@ font-weight:500;
 }
 .address-phone a:hover,.address-phone a:focus{color: var(--accent-color);}
 .address-map,.address-mail,.address-phone{display: block;}
-.address-map,.address-mail{padding-bottom: 9px;}
+.address-map,.address-mail{margin-bottom: 9px;}
 
 
 
@@ -252,7 +261,7 @@ font-weight:500;
 .operation{
 	display: flex;
 	justify-content: center;
-	
+	margin-bottom: 50px;
 	
 }
 .action{
@@ -266,7 +275,8 @@ font-weight:500;
 	border-radius: 4px;
 	cursor: pointer;
 	border-color:var(--background-collor-button) ;
-	margin-bottom: 50px;
+	
+	padding: 6px 22px;
 }
 .action:hover,.action:focus{
 	color: var(--white-cloror);
@@ -298,7 +308,9 @@ font-weight:500;
 	border-bottom-width: 1px;
 	border-left-width: 1px;
 	border-right-width:1px;
-	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 24px;
 }
 .name-project{
 			font-weight: 700;
@@ -306,18 +318,12 @@ font-weight:500;
 		line-height: 2.0;
 		letter-spacing: 0.06em;
 		color: var(--title-text-color);
-		padding-top: 20px;
-		padding-left: 24px;
-}
+			}
 .project-type{
 		font-size: 16px;
 		line-height: 1.87;
 		letter-spacing: 0.03em;
 			color: var(--primary-text-color);
 			margin-top: 4px;
-			padding-left: 24px;
-			padding-bottom: 20px;
-}
- .project-li img {
- 	display: block;
- }
+				}
+ 
